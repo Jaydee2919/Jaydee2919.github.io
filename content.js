@@ -7,7 +7,7 @@ window.siteContent = {
     "linkedinUrl": "https://www.linkedin.com/in/jayantaiimk",
     "email": "jayant.db91@gmail.com",
     "phone": "+91 90732 34046",
-    "phoneHref": "tel:+919073234046"
+    "phoneHref": ""
   },
   "sections": {
     "highlights": true,
@@ -19,11 +19,31 @@ window.siteContent = {
     "contact": true
   },
   "nav": [
-    { "label": "Highlights", "href": "#highlights", "section": "highlights" },
-    { "label": "Expertise", "href": "#expertise", "section": "expertise" },
-    { "label": "Projects", "href": "#projects", "section": "projects" },
-    { "label": "Post", "href": "#post", "section": "post" },
-    { "label": "Contact", "href": "#contact", "section": "contact" }
+    {
+      "label": "Highlights",
+      "href": "#highlights",
+      "section": "highlights"
+    },
+    {
+      "label": "Expertise",
+      "href": "#expertise",
+      "section": "expertise"
+    },
+    {
+      "label": "Projects",
+      "href": "#projects",
+      "section": "projects"
+    },
+    {
+      "label": "Post",
+      "href": "#post",
+      "section": "post"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact",
+      "section": "contact"
+    }
   ],
   "hero": {
     "eyebrow": "Cards and payments SME / Product and project leader",
@@ -33,19 +53,37 @@ window.siteContent = {
       "Across Axis Bank, HDFC Bank and earlier commercial roles, I have led initiatives spanning onboarding, servicing, revenue growth, strategic partnerships, product innovation, and stakeholder-heavy change programs."
     ],
     "actions": [
-      { "label": "Connect with me", "href": "#contact", "style": "primary" },
-      { "label": "View project proof", "href": "#projects", "style": "secondary" }
+      {
+        "label": "Connect with me",
+        "href": "#contact",
+        "style": "primary"
+      },
+      {
+        "label": "View project proof",
+        "href": "#projects",
+        "style": "secondary"
+      }
     ],
     "facts": [
+      {
+        "label": "Core domain",
+        "title": "Cards, Payments, UPI, CX, Agentic & Gen AI led Automation",
+        "body": ""
+      },
       {
         "label": "Current role",
         "title": "Lead: Process Excellence and Automation",
         "body": "Axis Bank, Mumbai"
       },
       {
-        "label": "Core domain",
-        "title": "Cards, payments, CX, automation",
-        "body": "Product launches, journey orchestration, stakeholder-led delivery"
+        "label": "Past Roles",
+        "title": "Commercial , Prepaid Cards, Merchant Acquiring, Account Management",
+        "body": "HDFC Bank, ICICI Prudential, Markets & Markets Research"
+      },
+      {
+        "label": "Overseas Exposure",
+        "title": "UAE, Oman , Bahrain",
+        "body": "Redington Gulf"
       }
     ]
   },
@@ -107,7 +145,7 @@ window.siteContent = {
     ]
   },
   "projects": {
-    "eyebrow": "Selected projects",
+    "eyebrow": "Marquee Projects",
     "title": "Business-critical journeys shipped across revenue, acquisition, service, and payments innovation.",
     "items": [
       {
@@ -141,7 +179,7 @@ window.siteContent = {
         ]
       },
       {
-        "meta": "Axis Bank / Strategic payments initiative",
+        "meta": "Axis Bank / Ecosystem initiative",
         "title": "Credit on UPI",
         "description": "Leading a $100 Mn credit on UPI initiative to enable EMI on RuPay credit cards across TPAP ecosystems.",
         "bullets": [
@@ -200,9 +238,22 @@ window.siteContent = {
     "eyebrow": "Contact",
     "title": "Let’s connect on cards, payments, and digital transformation.",
     "actions": [
-      { "label": "jayant.db91@gmail.com", "href": "mailto:jayant.db91@gmail.com", "style": "primary" },
-      { "label": "+91 90732 34046", "href": "tel:+919073234046", "style": "secondary" },
-      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/jayantaiimk", "style": "secondary", "external": true }
+      {
+        "label": "jayant.db91@gmail.com",
+        "href": "mailto:jayant.db91@gmail.com",
+        "style": "primary"
+      },
+      {
+        "label": "+91 90732 34046",
+        "href": "tel:+919073234046",
+        "style": "secondary"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/jayantaiimk",
+        "style": "secondary",
+        "external": true
+      }
     ]
   }
 };

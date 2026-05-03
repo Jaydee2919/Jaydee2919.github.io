@@ -8,6 +8,7 @@
   const openButton = document.querySelector("#open-file");
   const saveButton = document.querySelector("#save-file");
   const downloadButton = document.querySelector("#download-file");
+  const hasLocalServer = location.protocol === "http:" || location.protocol === "https:";
 
   const sectionLabels = {
     highlights: "Highlights",
@@ -393,8 +394,18 @@
   }
 
   async function openContentFile() {
+    if (hasLocalServer) {
+      const response = await fetch("content.js", { cache: "no-store" });
+      if (!response.ok) throw new Error("Could not load content.js from the local editor server.");
+      content = parseContentFile(await response.text());
+      dirty = false;
+      render();
+      setStatus("Loaded content.js from the local editor server.");
+      return;
+    }
+
     if (!window.showOpenFilePicker) {
-      setStatus("Your browser cannot open files directly. Edit the loaded content or use Download content.js.");
+      setStatus("This browser cannot open files directly. You can still edit the loaded content and use Download content.js.");
       return;
     }
 
@@ -412,6 +423,22 @@
   }
 
   async function saveContentFile() {
+    if (hasLocalServer) {
+      const response = await fetch("/api/content", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(content),
+      });
+
+      if (!response.ok) {
+        throw new Error(await response.text());
+      }
+
+      dirty = false;
+      setStatus("Saved content.js. Refresh the preview page to see the latest changes.");
+      return;
+    }
+
     if (!fileHandle && window.showSaveFilePicker) {
       fileHandle = await window.showSaveFilePicker({
         suggestedName: "content.js",
@@ -421,7 +448,7 @@
 
     if (!fileHandle) {
       downloadContentFile();
-      setStatus("Direct save is unavailable here. A content.js download was created.");
+      setStatus("Direct save is unavailable in this browser. A content.js download was created.");
       return;
     }
 
