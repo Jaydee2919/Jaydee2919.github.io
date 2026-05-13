@@ -446,9 +446,21 @@ h1 {
 }
 
 .site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
   padding: 0 0 32px;
   color: var(--muted);
   font-size: 14px;
+}
+
+.site-footer p {
+  margin-bottom: 0;
+}
+
+.visitor-counter {
+  font-weight: 800;
 }
 
 .reveal {
@@ -522,6 +534,11 @@ h1 {
   .site-header {
     grid-template-columns: 1fr;
     gap: 14px;
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .site-nav {

@@ -71,7 +71,9 @@
 
     const inner = el("div", "hero-inner");
     inner.append(el("p", "eyebrow", data.hero.eyebrow));
-    inner.append(el("h1", "", data.hero.headline));
+    if (data.hero.headline) {
+      inner.append(el("h1", "", data.hero.headline));
+    }
     (data.hero.paragraphs || []).forEach((paragraph, index) => {
       inner.append(el("p", index === 0 ? "hero-lede" : "hero-note", paragraph));
     });
@@ -257,7 +259,13 @@
   function renderFooter() {
     footer.replaceChildren();
     const currentYear = new Date().getFullYear();
+    const visitKey = "jayanta-site-visit-count";
+    const visits = Number(localStorage.getItem(visitKey) || "0") + 1;
+    localStorage.setItem(visitKey, String(visits));
+
     footer.append(el("p", "", `© ${currentYear} ${data.site.name}. ${data.site.footer}`));
+    const counter = el("p", "visitor-counter", `Visits on this browser: ${visits}`);
+    footer.append(counter);
   }
 
   function initReveal() {

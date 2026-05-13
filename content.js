@@ -47,7 +47,7 @@ window.siteContent = {
   ],
   "hero": {
     "eyebrow": "Cards and payments SME / Product and project leader",
-    "headline": "Lead: Process Excellence and Automation",
+    "headline": "",
     "paragraphs": [
       "With 11+ years of experience my work sits at the intersection of cards, payments, digital banking, automation, customer experience, and cross-functional delivery. I translate business priorities into launch-ready journeys that move through policy, compliance, risk, technology, operations, and customer adoption with clarity.",
       "Across Axis Bank, HDFC Bank and earlier commercial roles, I have led initiatives spanning onboarding, servicing, revenue growth, strategic partnerships, product innovation, and stakeholder-heavy change programs."
