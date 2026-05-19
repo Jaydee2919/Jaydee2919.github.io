@@ -193,27 +193,27 @@ window.siteContent = {
   "post": {
     "eyebrow": "Featured LinkedIn post",
     "title": "A live professional update from my LinkedIn activity.",
-    "description": "A curated set of LinkedIn posts and profile activity. Each card opens the original LinkedIn destination in a new tab.",
+    "description": "A curated set of posts and profile activity. Each card opens the original destination in a new tab.",
     "ctaLabel": "Follow on LinkedIn",
     "ctaUrl": "https://www.linkedin.com/in/jayantaiimk",
-    "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7453711939156774913?collapsed=1",
+    "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7441381676834000896?collapsed=1",
     "cards": [
       {
-        "title": "Featured LinkedIn update",
-        "summary": "A selected professional update from my LinkedIn activity.",
-        "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7453711939156774913/",
+        "title": "Featured update",
+        "summary": "A selected professional update from my recent activity.",
+        "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7441381676834000896/",
         "image": "",
-        "thumbnailText": "LinkedIn Post"
+        "thumbnailText": "Featured"
       },
       {
         "title": "More posts and articles",
-        "summary": "Visit my LinkedIn profile for recent articles, posts, and professional updates.",
+        "summary": "Visit my profile for recent articles, posts, and professional updates.",
         "url": "https://www.linkedin.com/in/jayantaiimk/recent-activity/all/",
         "image": "",
-        "thumbnailText": "Recent Activity"
+        "thumbnailText": "Activity"
       },
       {
-        "title": "LinkedIn articles",
+        "title": "Articles",
         "summary": "Browse long-form articles and professional writing published from my LinkedIn profile.",
         "url": "https://www.linkedin.com/in/jayantaiimk/recent-activity/articles/",
         "image": "",
