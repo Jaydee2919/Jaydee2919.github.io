@@ -190,7 +190,7 @@
     const frame = el("div", "post-frame reveal");
     const iframe = el("iframe");
     iframe.src = data.post.embedUrl;
-    iframe.height = "266";
+    iframe.height = "551";
     iframe.width = "504";
     iframe.frameBorder = "0";
     iframe.allowFullscreen = true;

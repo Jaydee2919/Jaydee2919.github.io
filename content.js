@@ -196,7 +196,7 @@ window.siteContent = {
     "description": "A curated set of posts and profile activity. Each card opens the original destination in a new tab.",
     "ctaLabel": "Follow on LinkedIn",
     "ctaUrl": "https://www.linkedin.com/in/jayantaiimk",
-    "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:share:7438585980107866113?collapsed=1",
+    "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7441381676834000896?collapsed=1",
     "cards": [
       {
         "title": "Featured update",
